@@ -46,6 +46,7 @@
       on that order will now break.
       This also changes the output of
       `AddToHueAndSaturation.get_parameters()`. #319
+* Added `AddToHue`, a shortcut for `AddToHueAndSaturation(value_hue=...)`. #319
 
 ## Fixes
  
