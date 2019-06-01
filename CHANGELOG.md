@@ -6,6 +6,8 @@
   maximum RAM demands).
 * Increased `max_distance` thresholds for `almost_equals()`, `exterior_almost_equals()` and `coords_almost_equals()` in `Polygon` and `LineString` from `1e-6` to `1e-4`.
   This should fix false-negative problems related to float inaccuracies.
+* Changed dependency `opencv-python` to `opencv-python-headless`.
+  This should improve support for some system without GUIs.
 
 ## Fixes
  
