@@ -746,7 +746,7 @@ class Affine(meta.Augmenter):
             shift_x = width / 2.0 - 0.5
             shift_y = height / 2.0 - 0.5
             scale_x, scale_y = scale_samples[0][i], scale_samples[1][i]
-            translate_x, translate_y = translate_samples[0][i], translate_samples[1][i]
+            translate_x, translate_y = -translate_samples[0][i], -translate_samples[1][i]
             if ia.is_single_float(translate_y):
                 translate_y_px = int(np.round(translate_y * keypoints_on_image.shape[0]))
             else:
