@@ -42,6 +42,8 @@
       This is due to a conversion to `float64` resulting in loss of resolution.
     * Fixed `Invert` in rare cases restoring dtypes improperly.
 * Fixed `dtypes.gate_dtypes()` crashing if the input was one or more numpy scalars instead of numpy arrays or dtypes.
+* Fixed `Superpixels` breaking when a sampled `n_segments` was `<=0`.
+  `n_segments` is now treated as `1` in these cases.
 
 
 # 0.2.9
